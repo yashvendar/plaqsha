@@ -29,7 +29,7 @@ body {
     /* min-height: 1vh; */
     width: 100vw;
     background-color: #1A0369 !important;
-    box-shadow: 1px 1px;
+    /* box-shadow: 1px 1px; */
 }
 
 footer {
@@ -52,11 +52,16 @@ section:first-of-type {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100vw;
     vertical-align: middle;
     color: #FFF;
 }
+
+
+/* section:last-of-type {
+    min-height: 50vh;
+} */
 
 @font-face {
     font-family: SFProDisplay;
@@ -211,6 +216,9 @@ section>div>h2 {
     section>div {
         margin-left: 5%;
     }
+    .book-demo {
+        margin-right: -15px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -236,4 +244,14 @@ section>div>h2 {
 .copyright {
     font-family: SFProDisplay;
     line-height: 16px;
+}
+
+.slider-containar {
+    width: 90vw;
+    height: 400px !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
 }

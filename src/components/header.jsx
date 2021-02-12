@@ -11,9 +11,12 @@ const Header = ({ siteTitle,toggler }) => {
       marginBottom: `1.45rem`,
     }}
   >
-    <Navbar className="header_" fixed="top" >
-          <Link to="/ab" className="company-tag ml-sm-5">
+    <Navbar className="header_ row-fluid " fixed="top" >
+          <Link to="/" className="company-tag ml-sm-5">
             Plaqsha
+          </Link>
+          <Link className="offset-sm-8" style={{ textDecoration:"none"}} to="/blog/">
+            Blog
           </Link>
           <Button className="book-demo mr-sm-4" onClick={()=>toggler(x=>!x)}>Book a Demo</Button>
     </Navbar>

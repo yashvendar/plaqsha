@@ -76,7 +76,7 @@ const Home = () => {
           </div>
         </section>
         <section id="learning" className="row">
-          <div className="col-12" style={{height:"auto"}} ></div>
+          <div className="col-11" style={{height:"auto"}} ></div>
           <div className="col-sm-6">
             <img src={Bite_sized_learning} width="100%" alt="" />
           </div>
@@ -118,9 +118,7 @@ const Home = () => {
             <img src={Multiplatform} width="100%" alt="" />
           </div>     
         </section>
-        <section style={{
-          width:"90vw"
-        }} >
+        <section className="slider-containar" >
           <h2 className="text-center"><span></span> What our users say? </h2>
           <div className="scroller">
           <Slider {...settings} >
@@ -135,7 +133,6 @@ const Home = () => {
                     <p >New york</p>
                   </div>
                 </div>
-                {/* <CardImg top width="50%" src={Top} alt="" /> */}
                 
                 <CardBody>
                   <CardText tag="span" className="offset-3" style={{color:"black"}}>
@@ -161,7 +158,6 @@ const Home = () => {
                     <p >New york</p>
                   </div>
                 </div>
-                {/* <CardImg top width="50%" src={Top} alt="" /> */}
                 
                 <CardBody>
                   <CardText tag="span" className="offset-3" style={{color:"black"}}>
@@ -187,7 +183,6 @@ const Home = () => {
                     <p >New york</p>
                   </div>
                 </div>
-                {/* <CardImg top width="50%" src={Top} alt="" /> */}
                 
                 <CardBody>
                 <CardText tag="span" className="offset-3" style={{color:"black"}}>
@@ -213,7 +208,6 @@ const Home = () => {
                     <p >New york</p>
                   </div>
                 </div>
-                {/* <CardImg top width="50%" src={Top} alt="" /> */}
                 
                 <CardBody>
                 <CardText tag="span" className="offset-3" style={{color:"black"}}>
@@ -239,7 +233,6 @@ const Home = () => {
                     <p >New york</p>
                   </div>
                 </div>
-                {/* <CardImg top width="50%" src={Top} alt="" /> */}
                 
                 <CardBody>
                 <CardText tag="span" className="offset-3" style={{color:"black"}}>
@@ -265,7 +258,6 @@ const Home = () => {
                     <p >New york</p>
                   </div>
                 </div>
-                {/* <CardImg top width="50%" src={Top} alt="" /> */}
                 
                 <CardBody>
                   <CardText tag="span" className="offset-3" style={{color:"black"}}>

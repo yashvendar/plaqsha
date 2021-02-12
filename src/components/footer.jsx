@@ -14,11 +14,11 @@ const Footer=()=>(
                 <img src={Linkden} alt="" width="40px" height="40px"  />
                 <img src={Twitter} alt="" width="40px" height="40px" className="ml-3" />
             </div>
-            <div className="col-12 col-sm-2 ">
+            <div className="col-11 col-sm-2 ">
                 <img src={Google_logo} alt="" style={{maxWidth:"150px"}}  />
             </div>
-            <h6 className="col-12 mt-4 copyright" style={{color:"#fff", textAlign:"center"}}> Copyright ©️ 2020 plaqsha.com <span className="d-sm-none"> <br /></span> All rights reserved. </h6>
-            <hr style={{borderWidth:"1px", borderColor:"white"}} className="col-10 col-md-12" />
+            <h6 className="col-11 mt-4 copyright" style={{color:"#fff", textAlign:"center"}}> Copyright ©️ 2020 plaqsha.com <span className="d-sm-none"> <br /></span> All rights reserved. </h6>
+            <hr style={{borderWidth:"1px", borderColor:"white"}} className="col-10 col-md-11" />
             
         </div>
     </footer>
