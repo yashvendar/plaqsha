@@ -10,13 +10,13 @@ const path = require('path')
 exports.onCreatePage = async({ page, actions }) => {
     const { createPage } = actions
 
-    console.log("page - ", page.path)
-    if (page.path.match(/^\/blogs/)) {
-        createPage({
-            path: "/blog",
-            matchPath: "/blog/*",
-            component: path.resolve('pages/blog/blog')
-        })
+    // page.matchPath is a special key that's used for matching pages
+    // only on the client.
+    if (page.path.match(/^\/app/)) {
+        page.matchPath = "/app/*"
+
+        // Update the page.
+        createPage(page)
     }
 }
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {

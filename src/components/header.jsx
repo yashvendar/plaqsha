@@ -15,7 +15,7 @@ const Header = ({ siteTitle,toggler }) => {
           <Link to="/" className="company-tag ml-sm-5">
             Plaqsha
           </Link>
-          <Link className="offset-sm-8" style={{ textDecoration:"none"}} to="/blog/">
+          <Link className="offset-sm-8" style={{ textDecoration:"none"}} to="/app">
             Blog
           </Link>
           <Button className="book-demo mr-sm-4" onClick={()=>toggler(x=>!x)}>Book a Demo</Button>
