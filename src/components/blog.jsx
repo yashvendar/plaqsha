@@ -8,6 +8,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
 import { Link } from "gatsby"
 
+const Dot=()=>(<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.77781" cy="3.74876" r="3.07737" fill="#D3C9C9"/>
+                </svg>
+            )
+
 const BlogMain = () => {
 
     const [showModal,toggler]=useState(false);
@@ -43,11 +48,10 @@ const BlogMain = () => {
                     <div className="row pt-2 pb-3">
                         <div className="col-3">
                             News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
-                            </span>
+                            
+                            
                         </div>
-                        
+                        <span className="pr-2"><Dot /></span>
                         <div className="date text-muted">
                             9 April 2019
                         </div>
@@ -65,12 +69,9 @@ const BlogMain = () => {
                 <div className="row pt-2 pb-3">
                         <div className="col-3">
                             News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
-                            </span>
                         </div>
-                        
-                        <div className="date col-5 ml-2 text-muted">
+                        <span className="pr-2"><Dot /></span>
+                        <div className="date text-muted">
                             9 April 2019
                         </div>
                     </div>
@@ -98,7 +99,8 @@ const BlogMain = () => {
                         <div className="col-5">
                             News
                             <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
+                            <Dot />
+
                             </span>
                         </div>
                         
@@ -125,7 +127,7 @@ const BlogMain = () => {
                         <div className="col-5">
                             News
                             <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
+                            <Dot />
                             </span>
                         </div>
                         
@@ -152,7 +154,7 @@ const BlogMain = () => {
                         <div className="col-5">
                             News
                             <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
+                            <Dot />
                             </span>
                         </div>
                         
@@ -179,7 +181,7 @@ const BlogMain = () => {
                         <div className="col-5">
                             News
                             <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
+                            <Dot />
                             </span>
                         </div>
                         
@@ -205,7 +207,7 @@ const BlogMain = () => {
                         <div className="col-5">
                             News
                             <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                                &middot;
+                            <Dot />
                             </span>
                         </div>
                         

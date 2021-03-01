@@ -61,9 +61,9 @@ const Home = () => {
         </div>
       }
       {!showModal && <div className="container row ml-sm-5 sections">
-        <section id="start" className="row">
-          <div className="col-11 mb-5 mb-sm-1 order-last order-sm-1 col-sm-6 text-box">
-            <h1>
+        <section id="start" className="row pl-sm-5">
+          <div className="col-11 mb-5 mb-sm-1 order-last order-sm-1 col-sm-5 text-box">
+            <h1 className="bite_sized">
               Bite-sized, reinforced nuggets for workforce empowerment
             </h1>
             <p>
@@ -71,11 +71,11 @@ const Home = () => {
             </p>
             <a href="/#learning" className="explore_button">Explore Features</a>
           </div>
-          <div className="col-11 mb-5 mb-sm-1 order-1 order-sm-2 col-sm-6">
+          <div className="col-11 mb-5 mb-sm-1 offset-sm-1 order-1 order-sm-2 col-sm-6 d-none d-sm-block ">
             <img src={Top} width="100%" alt="" />
           </div>
         </section>
-        <section id="learning" className="row">
+        <section id="learning" className="row pl-sm-5">
           <div className="col-11" style={{height:"auto"}} ></div>
           <div className="col-sm-6">
             <img src={Bite_sized_learning} width="100%" alt="" />
@@ -87,7 +87,7 @@ const Home = () => {
           </div>
         </section>
   
-        <section id="platform" className="row">
+        <section id="platform" className="row pl-sm-5">
           <div className="col-11 mb-5 mb-sm-1 order-last order-sm-1 col-sm-6 text-box">
             <h2><span></span> Gamified platform</h2>
             <p>Just the right gamification elements to engage the workforce.</p>
@@ -98,7 +98,7 @@ const Home = () => {
           </div>      
         </section>
   
-        <section id="learning1" className="row">
+        <section id="learning1" className="row pl-sm-5">
           <div className="col-sm-6">
             <img src={Adaptive_learning} width="100%" alt="" />
           </div>
@@ -108,7 +108,7 @@ const Home = () => {
             <a target="_blank" href="https://www.smartsparrow.com/what-is-adaptive-learning/"> Learn more about Adaptive learning {'>'}</a>
           </div>      
         </section>
-        <section id="platform1" className="row">
+        <section id="platform1" className="row pl-sm-5">
           <div className="col-11 mb-5 mb-sm-1 order-last order-sm-1 col-sm-6">
             <h2><span></span> Multilingual platform </h2>
             <p>Offer learning in the language of the learner.</p>

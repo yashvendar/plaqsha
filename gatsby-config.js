@@ -19,8 +19,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Palqsha`,
-                short_name: `Palqsha`,
+                name: `Plaqsha`,
+                short_name: `Plaqsha`,
                 start_url: `/`,
                 background_color: `#663399`,
                 theme_color: `#663399`,

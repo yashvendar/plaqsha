@@ -22,7 +22,7 @@ body {
     background-image: linear-gradient(to bottom, #012e67, #8D166c);
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .header_ {
@@ -94,7 +94,7 @@ section>h2>span {
 section>div>h1 {
     font-weight: 800;
     font-size: 2rem;
-    font-family: SFProDisplay;
+    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* color: linear-gradient(to bottom, #fff, #0A74F1); */
     background: -webkit-linear-gradient(#5d94d3, #0A74F1);
     -webkit-background-clip: text;
@@ -219,6 +219,18 @@ section>div>h2 {
     .book-demo {
         margin-right: -15px;
     }
+    h2,
+    .h2 {
+        font-size: 30px !important;
+    }
+    .bite_sized {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    #start {
+        min-height: fit-content;
+        height: 70vh !important;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -242,7 +254,7 @@ section>div>h2 {
 }
 
 .copyright {
-    font-family: SFProDisplay;
+    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 16px;
 }
 
@@ -254,4 +266,33 @@ section>div>h2 {
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
+}
+
+.p {
+    /* Sub-heading */
+    position: absolute;
+    width: 572px;
+    height: 100px;
+    left: 100px;
+    top: 436px;
+    /* Rectangle 7 */
+    position: absolute;
+    width: 99px;
+    height: 19px;
+    left: 196px;
+    top: 513px;
+    background: #3F92F4;
+    /* Enterprise skill enhancement platform for the mobile workforce. */
+    position: absolute;
+    width: 572px;
+    height: 100px;
+    left: 100px;
+    top: 436px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 50px;
+    /* or 147% */
+    color: #FFFFFF;
 }
