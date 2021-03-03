@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { InlineWidget } from "react-calendly"
 import { Link } from 'gatsby';
+import { Linkedin_logo, Twitter_logo } from './image';
 
 
-ReactGA.initialize(process.env.APP_GA_TRACKING_CODE);
+ReactGA.initialize('G-3J038KE39V');
 
 const Blog =( props )=>{
     const [data, setData] = useState(null);
-    const [showModal,toggler]=useState(false);
     useEffect(() => {
         fetch('https://script.google.com/macros/s/AKfycbxOLElujQcy1-ZUer1KgEvK16gkTLUqYftApjNCM_IRTL3HSuDk/exec?id=1SdN5xgwGwqQMnjwW3dQMtFNFzpWhLs2u4t7tUqy2dpM')
         .then(x=> x.json() )
@@ -22,20 +22,13 @@ const Blog =( props )=>{
     }, [props.id]);
     return(
         <div>
-            <Layout toggler={toggler}>
+            <Layout >
                 {/* {alert(JSON.stringify(screen,null,4))} */}
                 <SEO title={data?`Blog:${data[props.id].title}`:'Blog'} />
-                {showModal &&
-                    <div className="modal_copy">
-                    <InlineWidget url= 'https://calendly.com/plaqsha/30min?background_color=012e67&text_color=ffffff&primary_color=9384f8'
-            
-                    />
-                    </div>
-                }
-                {!showModal && <div className="container-md">
+                <div className="container">
                     <div  style={{minHeight:"70vh", position:"relative"}}>
                         {data && <div style={{width:"100%"}}>
-                                <div className="image_container">
+                                <div className="image_container ">
                                     <img src={data[props.id].img_link} style={{width:"100%", height:"70vh"}} /> 
                                     <div className="image_title_box mt-5" style={{position:"absolute",top:'0',color:"#FFF", width:"100%"}}>
                                         <div className="text-center image_title_text mt-4 pt-5 pt-md-5 "  >
@@ -56,18 +49,21 @@ const Blog =( props )=>{
                                         </div>
                                     </div>
                                 </div>   
-                                <div className="container text-justify blog_body text-white p-md-5" style={{position:"relative"}} >
-                                {data[props.id].description}
+                                <div className="container text-justify blog_body1 p-md-5" style={{fontWeight:"100"}} >
+                                    <div className="pl-sm-3 pr-sm-3">
+                                        {data[props.id].description}
+                                    </div>
                                 </div>
                                 {/* Share with  */}
-                                <div className="text-center text-white">
+                                <div className="text-center text-white col-12  col-md-11 pt-5 pt-md-2">
                                     <h5>Share it with all your Network</h5>
                                     <span>
-                                        {/* <img  /> */}
+                                        <Twitter_logo /> <span>&nbsp;&nbsp;</span>
+                                        <Linkedin_logo />
                                     </span>
                                 </div>
 
-                                <div className="blog_controler mt-5">
+                                <div className="blog_controler pl-2 pr-2 pl-sm-5 pr-sm-5 pt-5 pb-5">
                                     {props.id>=1 &&<div style={{position:"relative"}}> <Link to={`/app/${parseInt(props.id) - 1}`} className="left_arrow">
                                         <svg width="138" height="58" viewBox="0 0 138 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M35.1036 55L3.00002 29L35.1036 3" stroke="#0090FF" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,7 +82,7 @@ const Blog =( props )=>{
                             </div>
                         }
                     </div>
-                </div>}
+                </div>
             </Layout>
         </div>
     )

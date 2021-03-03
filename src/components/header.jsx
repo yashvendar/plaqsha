@@ -1,35 +1,45 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react";
-import { Navbar, Button } from 'reactstrap'
+  import { Link } from "gatsby"
+  import PropTypes from "prop-types"
+  import React, { useState } from "react";
+  import { Navbar, Button } from 'reactstrap'
+  import { Main_logo } from "./image";
 
-const Header = ({ siteTitle,toggler }) => {
-  return(
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <Navbar className="header_ row-fluid " fixed="top" >
-          <Link to="/" className="company-tag ml-sm-5">
-            Plaqsha
-          </Link>
-          <Link className="offset-sm-8" style={{ textDecoration:"none"}} to="/app">
-            Blog
-          </Link>
-          <Button className="book-demo mr-sm-4" onClick={()=>toggler(x=>!x)}>Book a Demo</Button>
-    </Navbar>
-  </header>
-  )
-}
+  const Header = ({ siteTitle, path }) => {
+    const [bookademo,setBookademo] = useState(false);
+    const changeRoute=()=>{
+      setBookademo(true)
+      // alert(path)
+    }
+    if(!bookademo)
+      return(
+        <header
+          style={{
+            background: `rebeccapurple`,
+            marginBottom: `1.45rem`,
+          }}
+        >
+          <Navbar className="header_ row-fluid " fixed="top" >
+                <Link to="/" className="company-tag ml-sm-5 ">
+                  <Main_logo />
+                </Link>
+                <Link className="offset-sm-7 d-none d-sm-block" style={{ textDecoration:"none"}} to="/app">
+                  Blog
+                </Link>
+                <Button className="book-demo mr-sm-4" onClick={()=>changeRoute()}>Book a Demo</Button>
+          </Navbar>
+        </header>
+        )
+    else{
+      window.location.href="/bookademo/"
+    }
+  }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  Header.propTypes = {
+    siteTitle: PropTypes.string,
+  }
 
-Header.defaultProps = {
-  siteTitle: `Plaqsha`,
-}
+  Header.defaultProps = {
+    siteTitle: `Plaqsha`,
+  }
 
-export default Header
+  export default Header

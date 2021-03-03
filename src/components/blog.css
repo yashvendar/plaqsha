@@ -113,3 +113,14 @@
 .right_arrow svg path:last-of-type {
     fill: #0090FF;
 }
+
+.blog_body1 {
+    /* font-family: SFProDisplay, Arial, Helvetica, sans-serif; */
+    /* font-style: normal; */
+    font-weight: 300 !important;
+    font-size: 22px;
+    /* line-height: 140%; */
+    /* or 31px */
+    letter-spacing: 0.02em;
+    color: #F7F7F7 !important;
+}

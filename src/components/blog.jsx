@@ -7,32 +7,38 @@ import { InlineWidget } from "react-calendly"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
 import { Link } from "gatsby"
+import useGAEventsTracker from "./useGAEventsTracker"
 
 const Dot=()=>(<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="3.77781" cy="3.74876" r="3.07737" fill="#D3C9C9"/>
                 </svg>
             )
 
-const BlogMain = () => {
+const BlogMain = (props) => {
 
-    const [showModal,toggler]=useState(false);
-    const [allBlog, setAllBlog] = useState([]);
-    // const changeBlogs =(e)=>{
-    //     if(e){
-    //         setAllBlog()
-    //     }
-    // }
+    const [allBlog, setAllBlog] = useState(false);
+    const [data, setData] = useState([])
+    const [blogs, setBlogs] =useState([])
+
+    const useGAEventTracker1 =useGAEventsTracker('Blogs');
+    useGAEventTracker1('Page open','Blogs')
+    
+    const changeBlogs =()=>{
+        // if(data.length<1) return;
+        if(allBlog){
+            setAllBlog(false);
+            // setBlogs(data.slice(0,8))
+        }
+        else{
+            setAllBlog(true);
+            // setBlogs(data)
+        }
+    }
     return(
-        <Layout toggler={toggler}>
+        <Layout >
         
         <SEO title="Blog" />
-        {showModal &&
-        <div  style={{width:"100%"}} >
-            <InlineWidget url= 'https://calendly.com/plaqsha/30min?background_color=012e67&text_color=ffffff&primary_color=9384f8'
-            />
-        </div>
-      }
-      {!showModal && <div >
+        <div >
         <div className="blog_background " style={{ width:"100%", height:"70vh"}}>
             <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
             <div className="blog_middel_text ">
@@ -49,9 +55,9 @@ const BlogMain = () => {
                         <div className="col-3">
                             News
                             
-                            
+                            <span className="pl-2"><Dot /></span>
                         </div>
-                        <span className="pr-2"><Dot /></span>
+                        
                         <div className="date text-muted">
                             9 April 2019
                         </div>
@@ -69,8 +75,8 @@ const BlogMain = () => {
                 <div className="row pt-2 pb-3">
                         <div className="col-3">
                             News
+                            <span className="pl-2"><Dot /></span>
                         </div>
-                        <span className="pr-2"><Dot /></span>
                         <div className="date text-muted">
                             9 April 2019
                         </div>
@@ -228,13 +234,15 @@ const BlogMain = () => {
 
         </div>
         
-        <div className="older_post text-center" onClick={()=>{}}>
-            Older Post {String('>>') }
-        </div>
-        
+        {!allBlog&&<div className="older_post text-center pb-4" onClick={()=>changeBlogs()}>
+            <span onClick={()=>changeBlogs()}>Older Post {String('>>') }</span>
+        </div>}
+        {allBlog&&<div className="older_post text-center pb-4" >
+            <span onClick={()=>changeBlogs()}>Recent Post {String('>>') }</span>
+        </div>}
       </div>
 
-      </div>}
+      </div>
       
       </Layout>
     );

@@ -16,7 +16,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 
 const Home = () => {
-    const [showModal,toggler]=useState(false);
   
     const [settings,setSetting] = useState({
       dots: true,
@@ -50,17 +49,10 @@ const Home = () => {
     }, [])
   
     return(
-    <Layout toggler={toggler}>
+    <Layout >
       {/* {alert(JSON.stringify(screen,null,4))} */}
       <SEO title="Home" />
-      {showModal &&
-        <div className="modal_copy">
-        <InlineWidget url= 'https://calendly.com/plaqsha/30min?background_color=012e67&text_color=ffffff&primary_color=9384f8'
-  
-        />
-        </div>
-      }
-      {!showModal && <div className="container row ml-sm-5 sections">
+      <div className="container row ml-sm-5 sections">
         <section id="start" className="row pl-sm-5">
           <div className="col-11 mb-5 mb-sm-1 order-last order-sm-1 col-sm-5 text-box">
             <h1 className="bite_sized">
@@ -276,7 +268,7 @@ const Home = () => {
           </div>
           
         </section>
-      </div>}
+      </div>
     </Layout>
     );
   }

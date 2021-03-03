@@ -73,10 +73,26 @@ section {
 }
 
 .book-demo {
-    border-radius: 15px !important;
-    background: linear-gradient(to right, rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.7)) !important;
+    /* border-radius: 15px !important; */
+    /* background: linear-gradient(to right, rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.7)) !important; */
+    /* border: none !important;
+    font-weight: 800 !important; */
+    /* Rectangle 5 */
+    background: linear-gradient(213.02deg, #FFFFFF -124.89%, rgba(255, 255, 255, 0) 80.3%), #0A74F1;
+    /* box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);*/
+    /* Book a demo */
+    /* position: absolute; */
+    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ;
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    height: 50px;
     border: none !important;
-    font-weight: 800 !important;
+    border-radius: 16px !important;
 }
 
 section>div>h2>span,
@@ -296,3 +312,6 @@ section>div>h2 {
     /* or 147% */
     color: #FFFFFF;
 }
+
+
+/* Who loves to take their compliance courses? Judging by the amount of coverage of the term learning experience or LXP, the answer is that very few people are fully engaged, highly pleased, or even willing to take the courses assigned to them. Something’s fundamentally wrong with digital learning and now we’re starting to see the same problems arise with the omnipresence of remote learning in today’s socially distant world. No one ever loved learning through a learning management system (LMS) but we continue to use it as a primary source to deliver critical compliance information which gets lost in the digital junk drawer. Now we’re seeing a problematic learning concept of “first presentation” of materials. Because of low expectations, perhaps even a distaste for traditional learning experiences, there’s legitimate resistance, and sometimes even revulsion, to learn the first presentation of materials using an LMS. No matter how important the material is for an employee's success on the job or to the organization, people think of the learning through an LMS as one dreadful administrative burden while simultaneously putting them to boredom. It’s another thing to add to the to-do list and takes time away from doing their job. Maybe people pay some attention to what they’re supposed to be learning. But even when they do, are they paying attention to the right things? Unfortunately, a heavy load of disengagement starts at the moment someone receives their invitation email to a course. Then people start to think: Is this a precursor to the course? Is it another learning exercise? Why am I doing this again? Does my manager care how I score? How do I login to the system? Did I just get kicked out of the system and do I have to do it again? Before anyone has even completed the course, the time and money spent on the course has already been wasted. The act of presenting new information to people for the first time is at risk of alienation before someone even gives the course a chance. In an era when people are looking to get information from the quickest source possible, first presentation of learning content is a battle for getting the attention of a learner. Are you comfortable that legacy learning tools won’t help you win the battle for attention? Microlearning for a Great First Impression Learning professionals have the opportunity to adopt microlearning to engage their audiences in ways that ensure that the first presentation of materials actually makes a great first impression. Here are some of the reasons that best practice microlearning is an incredibly valuable method for first presentation for critical training and compliance. Engaging You can’t teach the first presentation of knowledge if you don’t gain the audiences’ attention to begin with. This is why microlearning engages people in learning that's not possible using traditional learning methods when presenting new knowledge: Mobile: A welcoming, friction-free modern learning experience makes a real difference for users who are accustomed to using mobile devices for outside of work and prefer the use of mobile devices for work purposes as well. Scenario-Based Learning and the Testing Effect: Instead of forcing people to sit through boring, time-consuming SCORM courses, scenario-based learning that incorporates the testing effect challenges a learner to actively think. Time-Respectful Learning should happen on a learners' own schedule, not on the schedule prescribed by an algorithm determined by an LMS. Microlearning succeeds where traditional online learning fails by: Respect the Audiences Time: Breaking content into learning exercises is relative to the real world and most importantly shortening content so that it isn’t one lengthy SCORM course. Respectfully Persistent: The spacing effect delivers information initially and then repeats it later to drive long-term knowledge retention to help people remember what you absolutely need them to know without overwhelming them with too much information. Focus on the Most Important Stuff: Not all information in a SCORM course is always relative to the person taking it. The learner has to go through an entire SCORM course to find what’s the most important information they need to know. Microlearning doesn’t just shrink content, it helps instructional designers feed the right knowledge that matters most to people’s work. Native Mobile App: While some SCORM courses may be viewed and taken on a mobile phone, microlearning content doesn’t just fit on a mobile phone, it’s delivered in a way that’s uniquely suited for a mobile workforce. This is incredibly important in the context of today’s remote workforce in which everyone is mobile. Save Money: At the same time, microlearning is more effective at delivering long-term knowledge retention and costs dramatically less than many traditional learning methods. This is because it takes less time to create content and deliver it to the learner. */
