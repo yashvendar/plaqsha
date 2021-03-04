@@ -17,7 +17,7 @@ const Blog =( props )=>{
         .then(x=> { /*alert(x['Sheet1']); */ setData(x.Sheet1)})
     },[props.id]);
     useEffect(() => {
-        alert(JSON.stringify(process.env))
+        // alert(JSON.stringify(process.env))
         ReactGA.pageview(window.location.pathname + window.location.search)
     }, [props.id]);
     return(
@@ -45,7 +45,17 @@ const Blog =( props )=>{
                                             By {data[props.id].author}
                                         </div>
                                         <div className="text-center date_div mt-2">
-                                        📅️ {Date(data[props.id].Timestamp)}
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                                            <rect width="20" height="20" fill="url(#pattern0)"/>
+                                            <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlinkHref="#image0" transform="scale(0.0104167)"/>
+                                            </pattern>
+                                            <image id="image0" width="96" height="96" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAACL0lEQVR4nO3dO24TURhH8XORqXisIWWQYBk8C7IJoKJnDUQIibSwCSh4LQMaqHgsgUCFpaGwC5BIovt5nH/sOb82+saTObpje5x4QJIkSdLUtHU/wDAMw7E70Nra9+E46f07t86N62QGCDNAmAHCDBBmgDADhK38GncYhivAfeAGsANcWHWbZ9wv4AvwHnjeWvu0ysbKAYZhOA/sAw+B2So7scHmwAHwqLU2r2ygFGB58F8BtyrzW+gNcLcSofocsI8H/2+3gceVwe4VsDznf2C6p52jzIGrrbXPPUOVFfAAD/7/zFi8GOlSCXC9MDMVN3sHKqegQ+Bi79xEHLbWLvcMVAKc6ev76zb27+874TADhBkgzABhBggzQJgBwka/pHDS62T9yxUQZoAwA4QZIMwAYQYIM0DY6O8Dpv55QC9XQJgBwgwQZoAwA4QZIMwAYQYIM0CYAcIMELbxf2Y+9rWZ076W5QoIM0CYAcIMEGaAMAOEGSDMAGEGCDNAmAHCDBBmgDADhBkgzABhBggzQJgBwjb+M+FN/38EV0CYAcIMEGaAMAOEGSDMAGGV9wGHwKWjfjjx7wv60TtQWQHfCzNT8a13oBLgXWFmKt72DlS+ungX+MgWXMYY2W/g2tq/vn55z5SD3rkJeNZ78KF+C5MZ8BK4U5nfQq+BvVO7hcnygfaApyzuHDFVc+AJxYMP49zGahe4x+LmBTts/70FfgJfWTzhvqicdiRJkiRN2x+UNmVOBV2d7QAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                        </svg>
+
+                                         {data[props.id].Timestamp}
                                         </div>
                                     </div>
                                 </div>   

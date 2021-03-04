@@ -6,8 +6,8 @@ class app extends Component {
     render() {
         return (
             <Router>
-                <BlogMain path="/app" exact />
-                <Blog path="/app/:id" />
+                <BlogMain path="/blogs" exact />
+                <Blog path="/blogs/:id" />
             </Router>
         );
     }

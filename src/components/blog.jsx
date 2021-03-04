@@ -42,7 +42,7 @@ const BlogMain = (props) => {
         <div className="blog_background " style={{ width:"100%", height:"70vh"}}>
             <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
             <div className="blog_middel_text ">
-                <span>My First Blog</span>
+                <span>Our Blog</span>
             </div>
         </div>
         <div className="two_blogs container">
@@ -66,7 +66,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
             </div>
@@ -85,7 +85,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                     </div>  
                 </div>
                 <div className="col-12 order-1 order-sm-2 col-sm-6 back_white nopadding">
@@ -118,7 +118,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/0" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
 
@@ -145,7 +145,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
 
@@ -172,7 +172,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
 
@@ -199,7 +199,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/0" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
 
@@ -225,7 +225,7 @@ const BlogMain = (props) => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
                     <div className="pt-3 pb-3">
-                        <Link to="/blog/z" ><ins> Read more {String('>')}</ins></Link>
+                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
 
@@ -234,7 +234,7 @@ const BlogMain = (props) => {
 
         </div>
         
-        {!allBlog&&<div className="older_post text-center pb-4" onClick={()=>changeBlogs()}>
+        {!allBlog&&<div className="older_post text-center pb-4 text-white  text-decoration-underline" onClick={()=>changeBlogs()}>
             <span onClick={()=>changeBlogs()}>Older Post {String('>>') }</span>
         </div>}
         {allBlog&&<div className="older_post text-center pb-4" >
