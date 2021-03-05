@@ -124,3 +124,9 @@
     letter-spacing: 0.02em;
     color: #F7F7F7 !important;
 }
+
+.older_post:hover {
+    color: blue !important;
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -183,7 +183,7 @@ const Home = () => {
                 <div >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                 </div>
-                <div className="pt-3 pb-3">
+                <div className="pt-3 pb-3 link-text">
                     <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                 </div>                    
             </div>

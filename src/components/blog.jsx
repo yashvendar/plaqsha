@@ -96,39 +96,11 @@ const BlogMain = (props) => {
         <div className="container">
 
         <div className="many_blogs container row">
-            <div className="oneblog col-12 col-sm-5 col-md-3 pt-5 pb-5 ml-3 ml-sm-0">
+            {Array(8).fill(<div className="oneblog col-12 col-sm-5 col-md-3 pt-5 pb-5 ml-3 ml-sm-0">
                 <div className="col-12 rounded-image nopadding">
                     <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
                 </div>
-                <div className=" " >
-                    <div className="row pt-2 pb-3">
-                        <div className="col-5">
-                            News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                            <Dot />
-
-                            </span>
-                        </div>
-                        
-                        <div className="date text-muted">
-                            9 April 2019
-                        </div>
-                    </div>
-                    <div >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
-                    </div>
-                    <div className="pt-3 pb-3">
-                        <Link to="/blogs/0" ><ins> Read more {String('>')}</ins></Link>
-                    </div>                    
-                </div>
-
-            </div>
-
-            <div className="oneblog col-12 col-sm-5 col-md-3 pt-5 pb-5 ml-3 ml-sm-0">
-                <div className="col-12 rounded-image nopadding">
-                    <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
-                </div>
-                <div className=" " >
+                <div >
                     <div className="row pt-2 pb-3">
                         <div className="col-5">
                             News
@@ -144,92 +116,12 @@ const BlogMain = (props) => {
                     <div >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
                     </div>
-                    <div className="pt-3 pb-3">
+                    <div className="pt-3 pb-3 link-text">
                         <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
                     </div>                    
                 </div>
 
-            </div>
-
-            <div className="oneblog col-12 col-sm-5 col-md-3 pt-5 pb-5 ml-3 ml-sm-0">
-                <div className="col-12 rounded-image nopadding">
-                    <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
-                </div>
-                <div className=" " >
-                    <div className="row pt-2 pb-3">
-                        <div className="col-5">
-                            News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                            <Dot />
-                            </span>
-                        </div>
-                        
-                        <div className="date text-muted">
-                            9 April 2019
-                        </div>
-                    </div>
-                    <div >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
-                    </div>
-                    <div className="pt-3 pb-3">
-                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
-                    </div>                    
-                </div>
-
-            </div>
-
-            <div className="oneblog col-12 col-sm-5 col-md-3 pt-5 pb-5 ml-3 ml-sm-0">
-                <div className="col-12 rounded-image nopadding">
-                    <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
-                </div>
-                <div className=" " >
-                    <div className="row pt-2 pb-3">
-                        <div className="col-5">
-                            News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                            <Dot />
-                            </span>
-                        </div>
-                        
-                        <div className="date text-muted">
-                            9 April 2019
-                        </div>
-                    </div>
-                    <div >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
-                    </div>
-                    <div className="pt-3 pb-3">
-                        <Link to="/blogs/0" ><ins> Read more {String('>')}</ins></Link>
-                    </div>                    
-                </div>
-
-            </div>
-            <div className="oneblog col-12 col-sm-5 col-md-3 pt-5 pb-5 ml-3 ml-sm-0">
-                <div className="col-12 rounded-image nopadding">
-                    <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
-                </div>
-                <div className=" " >
-                    <div className="row pt-2 pb-3">
-                        <div className="col-5">
-                            News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
-                            <Dot />
-                            </span>
-                        </div>
-                        
-                        <div className="date text-muted">
-                            9 April 2019
-                        </div>
-                    </div>
-                    <div >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consecter adipiscing onsectetur adipiscing elit.
-                    </div>
-                    <div className="pt-3 pb-3">
-                        <Link to="/blogs/1" ><ins> Read more {String('>')}</ins></Link>
-                    </div>                    
-                </div>
-
-            </div>
+            </div>)}
 
 
         </div>
@@ -237,7 +129,7 @@ const BlogMain = (props) => {
         {!allBlog&&<div className="older_post text-center pb-4 text-white  text-decoration-underline" onClick={()=>changeBlogs()}>
             <span onClick={()=>changeBlogs()}>Older Post {String('>>') }</span>
         </div>}
-        {allBlog&&<div className="older_post text-center pb-4" >
+        {allBlog&&<div className="older_post text-white text-center pb-4 text-decoration-underline" >
             <span onClick={()=>changeBlogs()}>Recent Post {String('>>') }</span>
         </div>}
       </div>

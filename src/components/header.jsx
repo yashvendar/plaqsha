@@ -25,7 +25,7 @@ import useGAEventsTracker from "./useGAEventsTracker";
                 <Link to="/" className="company-tag ml-sm-5 ">
                   <Main_logo />
                 </Link>
-                <Link className="offset-sm-7 d-none d-sm-block" style={{ textDecoration:"none"}} to="/blogs">
+                <Link className="offset-sm-7 d-none d-sm-block" style={{ textDecoration:"none", color:"#54A2FF", fontWeight:"bold"}} to="/blogs">
                   Blog
                 </Link>
                 <Button className="book-demo mr-sm-4" onClick={()=>changeRoute()}>Book a Demo</Button>
