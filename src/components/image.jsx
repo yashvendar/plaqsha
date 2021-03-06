@@ -36,7 +36,7 @@ const Image = () => {
 export default Image
 
 export const Main_logo=()=>(
-  <svg width="170" height="47" viewBox="0 0 170 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg  viewBox="0 0 170 47" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="39" height="10" rx="5" fill="url(#paint0_linear)"/>
 <rect x="7" y="12" width="32" height="10" rx="5" fill="url(#paint1_linear)"/>
 <rect x="14" y="25" width="25" height="10" rx="5" fill="url(#paint2_linear)"/>

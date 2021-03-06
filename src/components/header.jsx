@@ -21,14 +21,18 @@ import useGAEventsTracker from "./useGAEventsTracker";
             marginBottom: `1.45rem`,
           }}
         >
-          <Navbar className="header_ row-fluid " fixed="top" >
-                <Link to="/" className="company-tag ml-sm-5 ">
+          <Navbar className="header_  " fixed="top" >
+            <div className="container header_row">
+                <Link to="/" className="company-tag header-company-logo ">
                   <Main_logo />
                 </Link>
-                <Link className="offset-sm-7 d-none d-sm-block" style={{ textDecoration:"none", color:"#54A2FF", fontWeight:"bold"}} to="/blogs">
-                  Blog
-                </Link>
-                <Button className="book-demo mr-sm-4" onClick={()=>changeRoute()}>Book a Demo</Button>
+                <div className="blogs_link d-none d-sm-flex">
+                  <Link style={{ textDecoration:"none", color:"#54A2FF", fontWeight:"bold",textAlign:"right"}} to="/blogs">
+                    Blog
+                  </Link>
+                </div>
+                <Button className="book-demo " onClick={()=>changeRoute()}>Book a Demo</Button>
+            </div>
           </Navbar>
         </header>
         )

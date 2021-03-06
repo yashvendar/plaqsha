@@ -51,13 +51,13 @@ const BlogMain = (props) => {
                     <img src="https://ziksha-website.s3.ap-south-1.amazonaws.com/aurora-borealis-above-snowy-island-vestvagoya-lofoten_swen-stroop.jpg" width="100%" height="100%" /> 
                 </div>
                 <div className="blog_text_box col-12 col-sm-6" >
-                    <div className="row pt-2 pb-3">
-                        <div className="col-3">
+                    <div className="row pt-2 pb-3 d-flex">
+                        <div className="col-5 d-flex">
                             News
-                            
-                            <span className="pl-2"><Dot /></span>
+                            <span className="pl-2 " style={{fontWeight:"1800"}}>
+                            <Dot />
+                            </span>
                         </div>
-                        
                         <div className="date text-muted">
                             9 April 2019
                         </div>
@@ -72,10 +72,12 @@ const BlogMain = (props) => {
             </div>
             <div className="blog_with_info row">
                 <div className="blog_text_box col-12 order-2 order-sm-1 col-sm-6">
-                <div className="row pt-2 pb-3">
-                        <div className="col-3">
+                    <div className="row pt-2 pb-3 d-flex">
+                        <div className="col-5 d-flex">
                             News
-                            <span className="pl-2"><Dot /></span>
+                            <span className="pl-2 " style={{fontWeight:"1800"}}>
+                            <Dot />
+                            </span>
                         </div>
                         <div className="date text-muted">
                             9 April 2019
@@ -102,9 +104,9 @@ const BlogMain = (props) => {
                 </div>
                 <div >
                     <div className="row pt-2 pb-3">
-                        <div className="col-5">
+                        <div className="col-5 d-flex">
                             News
-                            <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
+                            <span className="pl-2 " style={{fontWeight:"1800"}}>
                             <Dot />
                             </span>
                         </div>

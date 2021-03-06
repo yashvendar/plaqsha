@@ -118,7 +118,7 @@ const Home = () => {
             <img src={Multiplatform} width="100%" alt="" />
           </div>     
         </section>
-        <section className="slider-containar" >
+        <section className="slider-containar mb-5" >
           <h2 className="text-center"><span></span> What our users say? </h2>
           <div className="scroller">
           <Slider {...settings} >
@@ -136,18 +136,18 @@ const Home = () => {
                 </div>
                 
                 <CardBody>
-                <CardText tag="span" className="offset-2 pt-3 pb-3" style={{color:"black"}}>
-                    {Array(4).fill(<svg width="35" className="pr-2" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <CardText tag="span" className="d-flex justify-content-center  star-row" style={{color:"black"}}>
+                    {Array(5).fill(<svg width="35" className="pr-2" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16.6549 0.755428C16.964 -0.145018 18.2375 -0.145019 18.5465 0.755426L21.994 10.7988C22.1327 11.2028 22.5127 11.4742 22.9399 11.4742H33.9743C34.9563 11.4742 35.3501 12.7417 34.541 13.2981L25.7101 19.3713C25.3402 19.6257 25.1852 20.0954 25.3309 20.52L28.726 30.4107C29.039 31.3224 28.0078 32.1055 27.2135 31.5593L18.1674 25.338C17.8261 25.1033 17.3754 25.1033 17.0341 25.338L7.9879 31.5593C7.19364 32.1055 6.16245 31.3224 6.47542 30.4107L9.87051 20.52C10.0162 20.0954 9.8612 19.6257 9.49133 19.3713L0.660438 13.2981C-0.148659 12.7417 0.245126 11.4742 1.22709 11.4742H12.2616C12.6887 11.4742 13.0687 11.2028 13.2074 10.7988L16.6549 0.755428Z" fill="#D2E125"/>
                                   </svg>
                     )}
-                    <svg width="35" className="pr-2" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg width="35" className="pr-2" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16.6549 0.755428C16.964 -0.145018 18.2375 -0.145019 18.5465 0.755426L21.994 10.7988C22.1327 11.2028 22.5127 11.4742 22.9399 11.4742H33.9743C34.9563 11.4742 35.3501 12.7417 34.541 13.2981L25.7101 19.3713C25.3402 19.6257 25.1852 20.0954 25.3309 20.52L28.726 30.4107C29.039 31.3224 28.0078 32.1055 27.2135 31.5593L18.1674 25.338C17.8261 25.1033 17.3754 25.1033 17.0341 25.338L7.9879 31.5593C7.19364 32.1055 6.16245 31.3224 6.47542 30.4107L9.87051 20.52C10.0162 20.0954 9.8612 19.6257 9.49133 19.3713L0.660438 13.2981C-0.148659 12.7417 0.245126 11.4742 1.22709 11.4742H12.2616C12.6887 11.4742 13.0687 11.2028 13.2074 10.7988L16.6549 0.755428Z" fill="#D2E125"/>
-                    </svg>
+                    </svg> */}
                     
                   </CardText>
                   <CardTitle tag="h5" className="pb-2 pt-5"> Love it!  </CardTitle>
-                  <CardSubtitle tag="h6" className="mb-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate distinctio sit </CardSubtitle>
+                  <CardSubtitle tag="h6" className=" text-muted card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate distinctio sit </CardSubtitle>
                 </CardBody>
               </Card>
             </div>)}
@@ -169,9 +169,9 @@ const Home = () => {
             </div>
             <div className=" " >
                 <div className="row pt-2 pb-3">
-                    <div className="col-5">
+                    <div className="col-5 d-flex">
                         News
-                        <span className="ml-2 ml-sm-3" style={{fontWeight:"1800"}}>
+                        <span className="pl-2 " style={{fontWeight:"1800"}}>
                         <Dot />
                         </span>
                     </div>

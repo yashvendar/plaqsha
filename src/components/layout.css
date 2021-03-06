@@ -28,13 +28,19 @@ body {
 .header_ {
     /* min-height: 1vh; */
     width: 100vw;
-    background-color: #1A0369 !important;
-    /* box-shadow: 1px 1px; */
+    background: #012E67;
+    box-shadow: inset 0px -1px 4px rgba(14, 118, 241, 0.2);
 }
 
 footer {
-    background-color: #1A0369 !important;
+    background: #012E67;
+    box-shadow: inset 0px 2px 4px rgba(14, 118, 241, 0.2);
     height: auto;
+}
+
+.logo-row {
+    display: grid;
+    grid-template-columns: max-content auto max-content;
 }
 
 .company-tag:hover {
@@ -64,8 +70,28 @@ section {
 } */
 
 @font-face {
-    font-family: SFProDisplay;
+    font-family: SFProDisplayBold;
     src: url("../fonts/SFProDisplay.ttf");
+}
+
+@font-face {
+    font-family: SFProDisplayLight;
+    src: url("../fonts/sf-ui-display-light-58646b33e0551.otf");
+}
+
+@font-face {
+    font-family: SFProDisplayMedium;
+    src: url("../fonts/sf-ui-display-medium-58646be638f96.otf");
+}
+
+@font-face {
+    font-family: SFProDisplayThin;
+    src: url("../fonts/sf-ui-display-thin-58646e9b26e8b.otf");
+}
+
+@font-face {
+    font-family: SFProDisplayUltralight;
+    src: url("../fonts/sf-ui-display-ultralight-58646b19bf205.otf");
 }
 
 .modal_copy>*::-webkit-scrollbar {
@@ -100,11 +126,12 @@ section>h2>span {
     display: inline-block;
     /* padding-right: 5px; */
     /* width: 10px; */
-    border: 4px solid blue;
+    border: 4px solid #3F92F4;
+    ;
     font-size: 30px;
     height: 30px;
-    background-color: #596AF9;
-    border-radius: 4px;
+    /* background-color: #596AF9; */
+    border-radius: 9px;
 }
 
 section>div>h1 {
@@ -138,6 +165,11 @@ section>div>h2 {
     margin-top: 10vh;
 }
 
+section>div>p {
+    font-size: 20px;
+    /* font-family: ; */
+}
+
 .explore_button {
     color: #fff;
     display: inline-block;
@@ -145,7 +177,7 @@ section>div>h2 {
     background: linear-gradient(213.02deg, #FFFFFF -124.89%, rgba(255, 255, 255, 0) 80.3%), #0A74F1;
     box-shadow: 2px 2px 4px rgba(255, 252, 252, 0.1);
     border-radius: 19px;
-    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: SFProDisplayLight, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 15px;
     font-size: 20px;
     border-radius: 15px;
@@ -163,7 +195,7 @@ section>div>h2 {
     background: linear-gradient(213.02deg, #FFFFFF -124.89%, rgba(255, 255, 255, 0) 80.3%), #0A74F1;
     box-shadow: 2px 2px 4px rgba(255, 252, 252, 0.1);
     border-radius: 19px;
-    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: SFProDisplayLight, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .learning1>div {
@@ -194,8 +226,14 @@ section>div>h2 {
 
 .card1 {
     width: calc(100% - 40px);
-    margin-left: 20px;
-    background: linear-gradient(to bottom, rgba(1, 46, 103, 0.3), rgba(1, 46, 103, 0.8)) !important;
+    /* margin-left: 20px; */
+    background: linear-gradient(180.02deg, rgba(141, 22, 108, 0) -96.23%, rgba(1, 46, 103, 0.75) 99.99%) !important;
+    filter: drop-shadow(0px 6px 18px rgba(147, 132, 248, 0.1));
+    border-radius: 8px;
+}
+
+.card-text {
+    height: 150px;
 }
 
 .footer-item {
@@ -214,7 +252,7 @@ section>div>h2 {
 .slick-dots>li>button::before {
     content: " " !important;
     background-color: #250068;
-    border: solid 3px #250068;
+    /* border: solid 3px #250068; */
     border-radius: 50%;
     padding-right: 15px;
 }
@@ -228,7 +266,29 @@ section>div>h2 {
     padding-right: 15px;
     /* width: 22px;
     box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF, 0 0 3px #FF0000, 0 0 5px #0000FF; */
-    transform: scale(1.5);
+    transform: scale(1.3);
+}
+
+.star-row {
+    height: 20px;
+}
+
+.header_row {
+    display: grid !important;
+    grid-template-columns: 180px 1fr 160px !important;
+}
+
+.blogs_link {
+    /* display: block; */
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: row-reverse;
+    width: calc(100% - 40px);
+}
+
+.header-company-logo,
+.company-tag {
+    width: 170px;
 }
 
 @media screen and (max-width: 500px) {
@@ -257,11 +317,33 @@ section>div>h2 {
         min-height: fit-content;
         height: 70vh !important;
     }
+    .logo-row {
+        grid-template-columns: auto auto;
+        grid-template-rows: 80px 80px;
+    }
+    .card1 {
+        margin-left: 25px;
+    }
+    .header-company-logo {
+        width: 140px;
+        margin-left: -15px;
+    }
+    .header_row {
+        grid-template-columns: 100px max-content !important;
+    }
+    .book-demo {
+        font-size: 16px !important;
+        width: 140px;
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .scroller {
         margin-left: 3%;
+    }
+    .header_row {
+        grid-template-columns: 170px auto max-content !important;
     }
 }
 
@@ -281,13 +363,13 @@ section>div>h2 {
 
 .copyright,
 .older_post {
-    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: SFProDisplayLight, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 16px;
 }
 
 .slider-containar {
     width: 90vw;
-    height: 400px !important;
+    min-height: 400px !important;
 }
 
 .nopadding {
@@ -337,9 +419,10 @@ section>div>h2 {
 }
 
 .recent_blogs {
-    font-family: SFProDisplay, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: SFProDisplayLight, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
     font-weight: 100 !important;
+    font-size: 18px;
 }
 
 .recent_blogs div h1::before {
@@ -367,6 +450,7 @@ a {
 
 .oneblog>* {
     color: #FFF;
+    border-radius: 8px !important;
 }
 
 .not-found {

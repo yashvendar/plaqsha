@@ -4,22 +4,25 @@ import Google_logo from '../images/google_store.png'
 
 import { Google_play_log, Linkedin_logo, Main_logo, Twitter_logo } from './image';
 const Footer=()=>(
-    <footer className="container-fluid pt-5">
-        <div className="row mr-1 ml-1 mr-sm-5 ml-sm-5 footer-item">
-            <div className="company-tag col-7 col-sm-4 col-md-2 pl-md-5">
+    <footer className="footer pt-5">
+        <div className="container logo-row">
+            
+            <div className="company-tag">
                 <Main_logo />
             </div>
-            <div className="col-5 col-sm-5 col-md-7 text-center " >
+            <div className=" text-center pt-3" >
             {/* <span className="d-none d-md-inline-block " >&nbsp; &nbsp; &nbsp;</span> */}
-            <Twitter_logo /> <span >&nbsp;</span>
-            <Linkedin_logo />
+                <Twitter_logo /> <span >&nbsp;</span>
+                <Linkedin_logo />
             </div>
-            <div className="col-11 col-sm-2 col-md-1 pt-2 pt-sm-0 ">
+            <div>
                 <Google_play_log />
             </div>
-            <h6 className="col-11 mt-4 copyright text-center" style={{color:"#fff"}}> Copyright ©️ 2020 plaqsha.com <span className="d-sm-none"> <br /></span> All rights reserved. </h6>
-            <hr style={{borderWidth:"1px", borderColor:"white"}} className="col-10 col-md-11" />
             
+        </div>
+        <div className="container text-footer pb-4 pt-3 ">
+            <div className="copyright text-center" style={{color:"#fff",height:"30px",lineHeight:"25px"}}> Copyright ©️ <span className="d-none d-md-inline pr-3"></span>2020 plaqsha.com <span className="d-sm-none"> <br /></span> <span className="d-none d-md-inline pr-3"></span> All rights reserved. </div>
+            <hr style={{borderWidth:"1px", borderColor:"white"}}  />
         </div>
     </footer>
 )
